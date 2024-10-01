@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Ubuntu:wght@400;500&display=swap');
+
+body {
+    background-color: #F4F6FA; /* Fondo claro, moderno */
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-box {
+    height: 85%; /* Ajusta el alto como sea necesario */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave, moderna */
+    border-radius: 20px; /* Bordes más redondeados */
+    background: rgba(255, 255, 255, 0.9); /* Efecto de transparencia moderna */
+    backdrop-filter: blur(10px); /* Fondo desenfocado */
+    overflow: hidden;
+}
+
+.chat-box header {
+    background: linear-gradient(135deg, #6D83F2, #4A60D2); /* Gradiente moderno */
+    padding: 15px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.chat-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+    background-color: #FAFBFF; /* Color claro para el fondo de mensajes */
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: #F0F3F9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.chat-input input,
+.chat-input textarea {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input button {
+    background-color: #6D83F2; /* Botón de enviar con un color llamativo */
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #4A60D2;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .chat-box {
+        width: 90%;
+        right: 5%;
+        bottom: 5%;
+    }
+}

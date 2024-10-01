@@ -1,0 +1,64 @@
+# Ignorar archivos de entorno y claves API
+apis.env
+serviceAccountKey.json
+firebase.json
+
+# Ignorar archivos de configuración sensibles
+*.key
+*.pem
+*.json
+
+# Ignorar archivos y carpetas de configuración de Firebase
+.firebase/
+.firebaserc
+
+# Ignorar dependencias de Python (pip)
+env/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+wheels/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar archivos de configuración de VSCode
+.vscode/
+
+# Ignorar archivos de logs y temporales
+*.log
+*.temp
+*.tmp
+
+# Ignorar archivos de Docker
+Dockerfile
+.dockerignore
+
+# Ignorar archivos de bases de datos locales
+*.sqlite3
+*.db
+
+# Ignorar archivos de caché
+*.cache
+*.bak
+*.swp
+*~
+
+# Ignorar archivos de lock y dependencias
+yarn.lock
+package-lock.json
+
+# Ignorar archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos generados por Firebase Hosting
+public/
+
+# Ignorar configuraciones locales de Git
+.idea/
+*.iml
